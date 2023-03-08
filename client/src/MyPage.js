@@ -1,10 +1,7 @@
 import { useState, useEffect } from "react";
 import React from "react";
-import Home from "./Home.js";
-import Ads from "./Ads.js";
-import MyPage from "./MyPage.js";
 
-function App() {
+function MyPage() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -13,11 +10,7 @@ function App() {
       .then((data) => setCount(data.count));
   }, []);
 
-  return (
-    <div className="App">
-      <Ads />
-    </div>
-  );
+  return <div className="App"></div>;
 }
 
-export default App;
+export default MyPage;
